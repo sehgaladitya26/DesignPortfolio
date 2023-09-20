@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="ScreenOrientation" content="autoRotate:disabled">
+  <link rel="icon" href="../assets/logo1-circle.png">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="responsive-index.css">
+  <title>RendrX</title>
+
+  <!--Google Fonts and Icons-->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet" 
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+
+  <!--Scroll-reveal-->
+  <script src="https://unpkg.com/scrollreveal"></script>
+
+</head>
+
+<body data-bs-spy="scroll" data-bs-traget=".navbar" data-bs-offset="75">
+
+  <!--Video-->
+  <video autoplay loop muted id="myVideo">
+    <source src="../assets/video1.mp4" type="video/mp4">
+    Your browser does not support HTML5 video.
+  </video>
+
+  <!--navigation-indicator-->
+  <nav class="navigation">
+    <ul>
+      <li><a href="#home" onclick="zoomin"><i class="material-symbols-outlined" id="circle">
+            trip_origin
+          </i></a></li>
+      <li><a href="#product"><i class="material-symbols-outlined" id="circle">
+        trip_origin
+      </i></a></li>
+      <li><a href="#prototype"><i class="material-symbols-outlined" id="circle">
+        trip_origin
+      </i></a></li>
+      <li><a href="#character"><i class="material-symbols-outlined" id="circle">
+        trip_origin
+      </i></a></li>
+    </ul>
+  </nav>
+
+  <!--navbar-->
+  <header class="header_wrapper">
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <!--bootstrap "fixed-top"-->
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#home">
+          <div class="wrapper">
+            <span class="Companytitle" style="font-family: 'Questrial', sans-serif;">
+              RendrX<br />
+              <span class="Tagline">
+                Design & Animation Studio
+              </span>
+            </span>
+          </div>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <!-- <span class="navbar-toggler-icon"></span> -->
+          <span class="material-symbols-outlined" id="ham">menu</span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+          <!--justify-content-end-->
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#info">About me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#product">Projects</a>
+            </li>
+          </ul>
+          <!-- <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form> -->
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!--Banner-->
+  <section id="home" class="banner-wrapper">
+    <div class="container">
+      <div class="row justify-content-between align-items-center">
+        <h1>RendrX</h1>
+      </div>
+    </div>
+  </section>
+
+  <!--product-->
+  <section id="product" class="product-wrapper">
+    <div class="container">
+      <div class="row text-row">
+        <div class="col-xl-5" style="border:1px solid rgba(255, 255, 255, 0)">
+          <div class="my-3 my-lg-0">
+            <h2 class="heading">Design & Illustration</h2>
+            <p class="para">
+              What is design? Most people think that design is about making things look pretty - a decoration. Art. But
+              design is as much an art as it is a science. Cold and calculated process. Sometimes the detriment of
+              pretty. Yet, the design is not allowed to fail. Design is for everyone and no one in particular.
+            </p>
+            <button class="button btn-primary" type="button" id="more-btn">
+              <i class="material-symbols-outlined" id="more-ico" href="#more">
+                arrow_circle_right
+              </i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="row img-row" style="z-index: 0;">
+        <div class="col-xl-12 col-lg-12 col-md-12"
+          style="border:1px solid rgba(255, 255, 255, 0); margin-left: 0%; margin-top: 0%;" id="design-img">
+          <img src="../assets/tesla3.png" alt="tesla3"
+            style="position: relative; width: 100%; height: 100%; object-fit:contain;">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- prototyping-->
+  <section id="prototype" class="product-wrapper">
+    <div class="container">
+      <div class="row justify-content-end text-row" style="border:1px solid rgba(255, 255, 255, 0);">
+        <div class="col-xl-7"></div>
+        <div class="col-xl-5" style="border:1px solid rgba(255, 255, 255, 0);" id="proto-text">
+          <div class="my-3 my-lg-0">
+            <h2 class="heading">Prototyping</h2>
+            <p class="para">
+              They slow us down to speed us up. By taking the time to prototype our ideas, we avoid costly mistakes such
+              as becoming too complex too early and sticking with a weak idea for too long.
+            </p>
+            <button class="button btn-primary" type="button" id="more-btn">
+              <i class="material-symbols-outlined" id="more-ico" href="#more">
+                arrow_circle_right
+              </i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="row img-row"
+        style="z-index: 0; min-width: 99%; min-height: 85%; border:1px solid rgba(255, 255, 255, 0);"" id = "
+        proto-img">
+        <div class="col-xl-7" style="border:1px solid rgba(255, 255, 255, 0); margin-left: 0%; margin-top: 0%;">
+          <img src="../assets/proto1.png" alt="tesla3"
+            style="position: relative; width: 100%; height: 90%; object-fit:contain;">
+        </div>
+      </div>
+      <div class="col-xl-5" style="border:1px solid rgba(255, 255, 255, 0);"></div>
+    </div>
+  </section>
+
+  <!--character-dev-->
+  <section id="character" class="product-wrapper">
+    <div class="container">
+      <div class="row text-row">
+        <div class="col-xl-5" style="border:1px solid rgba(255, 255, 255, 0)" text-ani>
+          <div class="my-3 my-lg-0">
+            <h2 class="heading">Character Development</h2>
+            <p class="para">
+              3D character modeling is a graphic design technique that creates a three-dimensional digital
+              representation of a surface or an object. Artists use specific software, start with a simple shape, and
+              slowly enrich it with more details.
+            </p>
+            <button class="button btn-primary" type="button" id="more-btn">
+              <i class="material-symbols-outlined" id="more-ico" href="#more">
+                arrow_circle_right
+              </i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="row img-row" style="z-index: 0; min-width: 99%; border:1px solid rgba(255, 255, 255, 0);"
+        id="chr-img">
+        <div class="col-xl-6" style="border:1px solid rgba(255, 255, 255, 0);"></div>
+        <div class="col-xl-6" style="border:1px solid rgba(255, 255, 255, 0); margin-left: 0%; margin-top: 0%;">
+          <img src="../assets/chr1.png" alt="tesla3"
+            style="position: relative; width: 100%; height: 100%; object-fit:contain;" id="chr-img-id">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script>
+    ScrollReveal({
+      reset: true,
+      distance: '60px',
+      duration: 1500,
+      delay: 100
+    });
+
+    ScrollReveal().reveal('.col-xl-12', { delay: 100, origin: 'bottom', distance: '10px' });
+    ScrollReveal().reveal('.para', { delay: 100, origin: 'left' });
+    ScrollReveal().reveal('.col-xl-5', { delay: 100, origin: 'left' });
+    ScrollReveal().reveal('.col-xl-7', { delay: 100, origin: 'left' });
+  </script>
+  <script src="home.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,231 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    background-color: #151515;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    font-family: 'Questrial', sans-serif;
+    font-size: 20vw;
+}
+
+h2 {
+    font-family: 'Questrial', sans-serif;
+    font-size: 5vw;
+    color: #ffffff;
+    font-weight: 100;
+    line-height: 1;
+}
+
+p {
+    font-size: 17px;
+    font-family: 'Questrial', sans-serif;
+    color: #ffffff;
+    font-weight: 100;
+    line-height: 1.7;
+}
+
+section {
+    padding: 50px 0;
+}
+
+.header_wrapper .navbar {
+    padding: 60px 60px;
+    -webkit-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+}
+
+.header_wrapper .navbar .container-fluid .navbar-toggler {
+    border: 0;
+    color: white;
+}
+
+.header_wrapper .navbar .container-fluid .navbar-brand .wrapper .Companytitle {
+    font-weight: 600;
+    color: white;
+}
+
+.header_wrapper .navbar .container-fluid .navbar-brand .wrapper .Companytitle .Tagline {
+    font-weight: 100;
+    /* cursor: pointer; */
+}
+
+.header_wrapper .navbar .container-fluid .collapse .navbar-nav .nav-item .nav-link {
+    transition: none;
+}
+
+.header_wrapper .navbar .container-fluid .collapse .navbar-nav .nav-item .nav-link {
+    margin: 0 10px;
+    color: white;
+    font-weight: 10%;
+}
+
+/*banner*/
+.banner-wrapper {
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 200px 0 100px 0;
+}
+
+.banner-wrapper .container {
+    padding: 0;
+    position: relative;
+}
+
+.banner-wrapper .container .row {
+    position: relative;
+    text-align: center;
+    color: #ffffff;
+    width: 100%;
+    height: auto;
+    padding: 0px;
+    margin: 0px;
+    z-index: 2;
+}
+
+.banner-wrapper .container .row h1 {
+    position: relative;
+    text-align: center;
+    color: #ffffff;
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    z-index: 2;
+}
+
+#myVideo {
+    position: fixed;
+    left: -10px;
+    top: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: 1;
+    padding: 0;
+    object-fit: cover;
+}
+
+
+/*product*/
+.product-wrapper {
+    position: relative;
+    width: 100%;
+    height: auto;
+    min-height: 105vh;
+    padding: 0px 0 0px 0;
+    margin-bottom: 80px;
+    /* From https://css.glass */
+    /* From https://css.glass */
+    background: rgba(22, 22, 22, 0.43);
+    border-radius: 5px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(30px);
+    border: 1px solid rgba(88, 88, 88, 0.1);
+    z-index: 2;
+}
+
+.product-wrapper .container {
+    padding-top: 200px;
+    /* padding-left: 180px; */
+    min-width: 100%;
+    height: auto;
+    min-height: 90%;
+    z-index: 3;
+    margin: 0;
+    position: absolute;
+    /* align-items: center; */
+    top: 0;
+    left: 0;
+    /* transform: translate(0%, 0%);  */
+}
+
+.product-wrapper .container .row {
+    position: absolute;
+    /* top: 0vh;
+    left: 0vw;
+    transform: translate(10%, -30%);  */
+    width: auto;
+    height: 80%;
+    z-index: 1;
+    font-weight: 100;
+    color: #ffffff;
+    padding: 0 150px 0 150px;
+    margin: 0;
+}
+
+#more-btn {
+    width: 50px;
+    height: 50px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 4;
+}
+
+#more-ico {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 100,
+  'GRAD' 0,
+  'opsz' 48;
+  font-size: 50px;
+  color: #ffffff;
+  z-index: 4;
+  transition: all 0.15s ease-out;
+}
+
+#more-ico:hover {
+    font-variation-settings:
+  'FILL' 1,
+  'wght' 100,
+  'GRAD' 0,
+  'opsz' 48;
+}
+
+/*nav-indicator*/
+.navigation {
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    right: 20px;
+    list-style: none;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 3;
+}
+
+.navigation ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navigation i {
+    width: 15px;
+    height: 15px;
+    background-color: transparent;
+    border: 3px solid rgb(255, 255, 255);
+    border-radius: 50%;
+    margin-top: 20px;
+    transition: all 0.15s ease-out;
+    list-style: none;
+    text-indent: -999px;
+    overflow: hidden;
+}
+
+.navigation i:hover {
+    transform: scale(1.8);
+}
